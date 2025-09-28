@@ -1,0 +1,4 @@
+patente;importe
+ABC123;12000,1
+AF123CD;9000,80
+SD234;1000

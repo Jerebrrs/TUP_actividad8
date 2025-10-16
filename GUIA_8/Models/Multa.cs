@@ -31,7 +31,7 @@ namespace GUIA_8.Models
 
         public string Cadena()
         {
-            return $@"Patente: {Patente} - Importe : {Importe}";
+            return $@" Patente: {Patente} - {Importe}";
         }
 
         public int CompareTo(Multa other)
@@ -45,9 +45,9 @@ namespace GUIA_8.Models
 
         public void Importar(string cadena)
         {
-            string[] cadenaS = cadena.Split(';');
-            string pate = cadenaS[0];
-            double imp = Convert.ToDouble(cadenaS[1]);
+            string[] cadenas = cadena.Split(';');
+            string pate = cadenas[0];
+            double imp = Convert.ToDouble(cadenas[1]);
 
             if (pate.Length == 6 || pate.Length == 7)
             {
